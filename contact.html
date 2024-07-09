@@ -56,14 +56,12 @@
                                 <p class="text-muted">Mon-Fri: 8AM-5PM</p>
                             </div>
                         </div>
-                        <form action="https://formsubmit.co/info@a2kgroup.org" method="POST">
-                            <!-- HONEYPOT -->
-                            <input type="text" name="_honey" style="display:none;">
-                            <!-- DISABLE CAPTCHA -->
-                            <input type="hidden" name="_captcha" value="false">
-
-                        
-                            <input type="hidden" name="_next" value="https://a2kgroup.org/contact_success.html">
+                        <form id="form" method="POST">
+                            <!-- ACCESS KEY -->
+                            <input type="hidden" name="access_key" value="5c3d4be4-5655-4b8e-99c6-ad655bf3367c">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            <input type="hidden" name="subject" value="New Submission from A2K Group International">
+                            <input type="hidden" name="from_name" value="Get in Touch">
 
                             <div class="mb-3">
                                 <label for="firstName" class="form-label">First Name</label>
@@ -82,7 +80,10 @@
                                 <textarea class="form-control" id="textArea" name="Message" rows="5"></textarea>
                                 <label class="form-label" for="textArea">Message</label>
                             </div>
+                            <!-- CAPTCHA -->
+                            <div class="h-captcha" data-captcha="true"></div>
                             <button type="submit" class="btn btn-lg btn-dark">Submit</button>
+                            <div id="result" class="mt-2"></div>
                         </form>
                     </div>
                     <!--MAP-->
@@ -123,7 +124,8 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <!--JS-->
-    <script src="script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="contact.js"></script>
 </body>
 
 </html>
