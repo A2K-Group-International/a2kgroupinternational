@@ -39,7 +39,7 @@
                 <div class="services_left">
                     <h1 class="mb-3">OUR <span>SERVICES</span></h1>
                     <h4 class="fw-normal mb-3">"Transforming Services through Digitalisation"</h4>
-                    <p class="text-justify fw-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ipsum accusamus harum sint ad voluptatem a maiores laudantium mollitia quisquam aspernatur autem, possimus asperiores fugiat eligendi quos id in perferendis.</p>
+                    <p class="text-justify fw-light">Our company offers a wide range of digital services, including mobile applications, data analysis and modeling, and data infrastructure, providing cutting-edge products tailored to your specific needs. We understand the importance of supporting our clients beyond initial product delivery by offering comprehensive services throughout all stages of product development, implementation and maintenance. What sets us apart is the quality of the relationships we build with our clients; we are committed to continuously engaging with them and adapting our offerings to ensure complete satisfaction with our services. As we transform our communities and our partners through the development of innovative digital solutions, we recognize that our clients are also on a journey of continuous development and our products must keep pace with their evolving goals of empowerment through digitalization. </p>
                 </div>
                 <div class="services_right">
                     <div class="services_right_img">
@@ -52,7 +52,7 @@
             <div class="services_box_container container">
                 <div class="services_box">
                     <div class="services_icon">
-                        <img src="./images/software.png" alt="software development">
+                        <img src="/images/software.png" alt="software development">
                     </div>
                     <div class="services_title">
                         <h5>Software Development</h5>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="services_box">
                     <div class="services_icon">
-                        <img src="./images/hardware.png" alt="hardware development">
+                        <img src="/images/hardware.png" alt="hardware development">
                     </div>
                     <div class="services_title">
                         <h5>Hardware Development</h5>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="services_box">
                     <div class="services_icon">
-                        <img src="./images/data-modelling.png" alt="data modelling">
+                        <img src="/images/data-modelling.png" alt="data modelling">
                     </div>
                     <div class="services_title">
                         <h5>Data Modelling & Analysis</h5>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="services_box">
                     <div class="services_icon">
-                        <img src="./images/data-center.png" alt="information systems">
+                        <img src="/images/data-center.png" alt="information systems">
                     </div>
                     <div class="services_title">
                         <h5>Information Systems</h5>
@@ -253,14 +253,68 @@
                     <source src="images/A2K Group Applications.mp4" type="video/mp4"></source>
                 </video>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 px-5">
                     <h2 class="text-center">PROJECTS SPOTLIGHT</h2>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, optio atque eveniet veniam culpa possimus explicabo earum, in pariatur iusto labore, facere consectetur? Magnam nesciunt porro quos in ducimus deleniti!</p>
-                </div>
+                    <p class="text-justify">Have a look at our Projects Spotlight where we showcase the cutting-edge solutions that we have developed for our clients. Each project highlights our commitment to innovation and excellence in digitalization. Through these featured projects, we demonstrate our ability to tailor products that meet the unique and evolving needs of our clients. Join us in exploring how our digital solutions are driving success and transformation across various industries. </p>
+                    <div class="btn-requestDemo text-center text-md-start">
+                        <button type="button" class="btn btn-outline-light rounded-pill" data-bs-toggle="modal" data-bs-target="#requestDemo" data-bs-whatever="@raq">Request a Demo</button>
+                        <div class="modal fade text-dark" id="requestDemo" tabindex="-1" aria-labelledby="requestDemoLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="requestDemoLabel">Request a Demo</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start">
+                            <form id="request-demo-form" method="POST">
+                                <!-- ACCESS KEY  -->
+                                <input type="hidden" name="access_key" value="5c3d4be4-5655-4b8e-99c6-ad655bf3367c">
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                <input type="hidden" name="subject" value="Request a Demo">
+                                <input type="hidden" name="from_name" value="Request a Demo">
+
+                                <div class="mb-3">
+                                    <label for="firstname" class="col-form-label">Name *</label>
+                                    <input type="text" name="firstname" class="form-control" id="requesterName" placeholder="Enter your name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="companyname" class="col-form-label">Company *</label>
+                                    <input class="form-control" name="companyname" id="requesterCompany" placeholder="Enter company name" required></input>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="col-form-label">Email *</label>
+                                    <input type="email" name="email" class="form-control" id="requesterEmail" placeholder="Enter company name" required></input>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="interest" class="col-form-label">Area of Interest</label>
+                                    <select class="form-select" id="floatingSelect" aria-label="interest" name="interest">
+                                    <option selected>Please choose</option>
+                                    <option value="Demo of Applications">Demo of Applications</option>
+                                    <option value="Collaboration & Partnership">Collaboration & Partnership</option>
+                                    <option value="Career & Internship">Career & Internship</option>
+                                    <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="col-form-label">Leave us a Message</label>
+                                    <textarea id="requesterMessage" class="form-control" name="message" rows="4" cols="50"></textarea>
+                                </div>
+                                <div class="modal-footer justify-content-start">
+                                <div class="h-captcha" data-captcha="true"></div>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-secondary">Submit</button>
+                                <div id="result" class="d-block text-start"></div>
+                                </div>
+                            </form>
+                        </div>       
+                    </div>
+                    </div>
+                 </div>
             </div>
-        
-        </section>  
-    </main>
+        </div>
+    </div>
+  </section>  
+</main>
 
     <!--FOOTER-->
     <footer id="footer" class="w-100 py-4 flex-shrink-0 border-top"></footer>
@@ -284,6 +338,8 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <!--JS-->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="requestdemo.js"></script>
     <script src="scroller.js"></script>
 </body>
 
