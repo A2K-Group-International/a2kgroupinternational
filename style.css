@@ -178,11 +178,11 @@ img {
 }
 /*DIVISON SECTION*/
 .divisionImage {
+  max-width: 416px;
   text-align: center;
-  margin-bottom: 1rem;
 }
 .divisionImage img {
-  max-width: 100%;
+  width: 100%;
   height: 150px;
   object-fit: contain;
   object-position: center;
@@ -705,6 +705,13 @@ img {
   .application_list:has(.application_card:hover) {
   animation-play-state: paused;
 }
+@media (max-width: 768px) {
+  .section5_scroller[data-animated="true"]
+    .application_list:has(.application_card:hover) {
+    animation-play-state: running;
+  }
+}
+
 .application_list {
   display: flex;
   flex-wrap: wrap;
@@ -727,6 +734,7 @@ img {
   align-items: center;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 .application_card_clicker {
   position: absolute;
