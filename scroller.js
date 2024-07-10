@@ -16,43 +16,43 @@ const supplyChainManagement = document.getElementById(
 const automationRobotics = document.getElementById("robotics");
 const capabilityDevelopment = document.getElementById("capability-development");
 
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  addAnimation();
-}
-function addAnimation() {
-  scrollers.forEach((scroller) => {
-    scroller.setAttribute("data-animated", true);
+// if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+//   addAnimation();
+// }
+// function addAnimation() {
+//   scrollers.forEach((scroller) => {
+//     scroller.setAttribute("data-animated", true);
 
-    const scrollerInner = scroller.querySelector(".application_list");
-    const scrollerItems = Array.from(scrollerInner.children);
+//     const scrollerInner = scroller.querySelector(".application_list");
+//     const scrollerItems = Array.from(scrollerInner.children);
 
-    scrollerItems.forEach((item) => {
-      const itemLastChild = item.lastChild;
-      const duplicatedItem = item.cloneNode(true);
-      duplicatedItem.setAttribute("aria-hidden", true);
-      scrollerInner.appendChild(duplicatedItem);
-      duplicatedItem.lastChild.previousSibling.id =
-        item.lastChild.previousSibling.getAttribute("id") + "-2";
-    });
-  });
-}
+//     scrollerItems.forEach((item) => {
+//       const itemLastChild = item.lastChild;
+//       const duplicatedItem = item.cloneNode(true);
+//       duplicatedItem.setAttribute("aria-hidden", true);
+//       scrollerInner.appendChild(duplicatedItem);
+//       duplicatedItem.lastChild.previousSibling.id =
+//         item.lastChild.previousSibling.getAttribute("id") + "-2";
+//     });
+//   });
+// }
 
-const digitalBadge2 = document.getElementById("digital-badge-2");
-const resourceManagement2 = document.getElementById("resource-management-2");
-const facilityGantry2 = document.getElementById("facility-gantry-2");
-const fleetManagement2 = document.getElementById("fleet-management-2");
-const hrTrainingFinances2 = document.getElementById("hr-training-finances-2");
-const dronesDeployment2 = document.getElementById("drones-deployment-2");
-const disasterReliefCoordination2 = document.getElementById(
-  "disaster-relief-coordination-2"
-);
-const supplyChainManagement2 = document.getElementById(
-  "supply-chain-management-2"
-);
-const automationRobotics2 = document.getElementById("robotics-2");
-const capabilityDevelopment2 = document.getElementById(
-  "capability-development-2"
-);
+// const digitalBadge2 = document.getElementById("digital-badge-2");
+// const resourceManagement2 = document.getElementById("resource-management-2");
+// const facilityGantry2 = document.getElementById("facility-gantry-2");
+// const fleetManagement2 = document.getElementById("fleet-management-2");
+// const hrTrainingFinances2 = document.getElementById("hr-training-finances-2");
+// const dronesDeployment2 = document.getElementById("drones-deployment-2");
+// const disasterReliefCoordination2 = document.getElementById(
+//   "disaster-relief-coordination-2"
+// );
+// const supplyChainManagement2 = document.getElementById(
+//   "supply-chain-management-2"
+// );
+// const automationRobotics2 = document.getElementById("robotics-2");
+// const capabilityDevelopment2 = document.getElementById(
+//   "capability-development-2"
+// );
 
 const tabContent = document.getElementById("tab-content");
 
@@ -149,13 +149,13 @@ supplyChainManagement.addEventListener("click", handleClick);
 automationRobotics.addEventListener("click", handleClick);
 capabilityDevelopment.addEventListener("click", handleClick);
 
-digitalBadge2.addEventListener("click", handleClick);
-facilityGantry2.addEventListener("click", handleClick);
-resourceManagement2.addEventListener("click", handleClick);
-fleetManagement2.addEventListener("click", handleClick);
-hrTrainingFinances2.addEventListener("click", handleClick);
-dronesDeployment2.addEventListener("click", handleClick);
-disasterReliefCoordination2.addEventListener("click", handleClick);
-supplyChainManagement2.addEventListener("click", handleClick);
-automationRobotics2.addEventListener("click", handleClick);
-capabilityDevelopment2.addEventListener("click", handleClick);
+// digitalBadge2.addEventListener("click", handleClick);
+// facilityGantry2.addEventListener("click", handleClick);
+// resourceManagement2.addEventListener("click", handleClick);
+// fleetManagement2.addEventListener("click", handleClick);
+// hrTrainingFinances2.addEventListener("click", handleClick);
+// dronesDeployment2.addEventListener("click", handleClick);
+// disasterReliefCoordination2.addEventListener("click", handleClick);
+// supplyChainManagement2.addEventListener("click", handleClick);
+// automationRobotics2.addEventListener("click", handleClick);
+// capabilityDevelopment2.addEventListener("click", handleClick);

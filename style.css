@@ -178,18 +178,17 @@ img {
 }
 /*DIVISON SECTION*/
 .divisionImage {
-  max-width: 416px;
+  max-width: 400px;
   text-align: center;
 }
 .divisionImage img {
-  width: 100%;
-  height: 150px;
+  width: 300px;
+  height: 90px;
   object-fit: contain;
-  object-position: center;
 }
 .divisionText {
   font-weight: 500;
-  text-align: center;
+  text-align: justify;
 }
 
 /*SECTION 3 CAROUSEL*/
@@ -681,9 +680,18 @@ img {
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
   font-size: 1em;
 }
+.services_section5 {
+  margin-bottom: 1rem;
+}
 .section5_scroller {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: auto;
+  margin-top: 70px;
+  color: #474a4c;
 }
 .section5_scroller[data-animated="true"] {
   overflow: hidden;
@@ -699,25 +707,6 @@ img {
 .section5_scroller[data-animated="true"] .application_list {
   width: max-content;
   flex-wrap: nowrap;
-  animation: section5_scroll 40s linear infinite;
-}
-.section5_scroller[data-animated="true"]
-  .application_list:has(.application_card:hover) {
-  animation-play-state: paused;
-}
-@media (max-width: 768px) {
-  .section5_scroller[data-animated="true"]
-    .application_list:has(.application_card:hover) {
-    animation-play-state: running;
-  }
-}
-
-.application_list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding-block: 2rem;
-  margin: 0;
 }
 .application_list li {
   white-space: nowrap;
@@ -826,10 +815,17 @@ img {
     mask: none;
   }
   .services_section5 {
-    padding: 0 !important;
+    padding: 1rem !important;
+  }
+  .application_card {
+    max-width: 400px;
   }
   #tab-content {
     text-align: start;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 10px !important;
   }
 }
 /******PARTNERS************/
